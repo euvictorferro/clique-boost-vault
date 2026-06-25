@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Clientes/debora-segnini/Branding/paleta.md",
+                "file": "01 - Clientes/debora-segnini/Estratégia/ICP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "paleta"
+              "title": "ICP"
             }
           }
         ]
@@ -186,6 +186,12 @@
   },
   "active": "b2a32dd649a9b07b",
   "lastOpenFiles": [
+    "01 - Clientes/debora-segnini/Branding/10-paletas-debora.html",
+    "01 - Clientes/debora-segnini/Branding/analise-perfis.md",
+    "01 - Clientes/debora-segnini/Branding/10-paletas-debora.md",
+    "01 - Clientes/debora-segnini/Branding/paleta.md",
+    "03 - Calendários/debora-segnini-2026-07.md",
+    "03 - Calendários",
     "01 - Clientes/debora-segnini/Estratégia/estrategia-conteudo.md",
     "01 - Clientes/tiago-zamboni/Estratégia/estrategia-conteudo.md",
     "01 - Clientes/tiago-zamboni/Briefing/briefing.md",
@@ -207,20 +213,14 @@
     "01 - Clientes/bela-castro/Bela Castro.md",
     "01 - Clientes/isabela-castro/notas-gerais.md",
     "Sem título.md",
-    "02 - Prompts e Skills/fluxos-automatizados.md",
     "02 - Prompts e Skills",
-    "01 - Clientes/sam-fernandes/notas-gerais.md",
     "01 - Clientes/debora-segnini/Reuniões",
     "01 - Clientes/debora-segnini/Análises",
-    "01 - Clientes/debora-segnini/Calendários/2026-07.md",
     "01 - Clientes/debora-segnini/Calendários",
-    "01 - Clientes/debora-segnini/Branding/analise-perfis.md",
-    "01 - Clientes/debora-segnini/Branding/paleta.md",
     "01 - Clientes/debora-segnini/Branding",
     "01 - Clientes/debora-segnini/Estratégia",
     "01 - Clientes/debora-segnini/Briefing",
     "01 - Clientes/victor-hugo-ferro/Reuniões",
-    "01 - Clientes/victor-hugo-ferro/Análises",
-    "01 - Clientes/victor-hugo-ferro/Calendários"
+    "01 - Clientes/victor-hugo-ferro/Análises"
   ]
 }

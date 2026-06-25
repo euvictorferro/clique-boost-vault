@@ -13,7 +13,7 @@ cliente: debora-segnini
 
 ## 4 PERSONAS PRINCIPAIS
 
-### 1️⃣ **O Investidor Estratégico** — Roberto Silva
+### **1. O Investidor Estratégico** — Roberto Silva
 
 | Campo | Valor |
 |-------|-------|
@@ -33,7 +33,7 @@ cliente: debora-segnini
 
 ---
 
-### 2️⃣ **A Família em Transição** — Juliana Mendes
+### **2. A Família em Transição** — Juliana Mendes
 
 | Campo | Valor |
 |-------|-------|
@@ -53,7 +53,7 @@ cliente: debora-segnini
 
 ---
 
-### 3️⃣ **O Aposentado Visionário** — Carlos Eduardo
+### **3. O Aposentado Visionário** — Carlos Eduardo
 
 | Campo | Valor |
 |-------|-------|
@@ -73,7 +73,7 @@ cliente: debora-segnini
 
 ---
 
-### 4️⃣ **A Empreendedora Digital** — Marina Costa
+### **4. A Empreendedora Digital** — Marina Costa
 
 | Campo | Valor |
 |-------|-------|
@@ -123,7 +123,7 @@ cliente: debora-segnini
 
 ## OBJEÇÕES PRINCIPAIS
 
-### ❌ Objeção 1: "O financiamento é muito complicado"
+### Objeção 1: "O financiamento é muito complicado"
 **Estratégia de Contorno:**
 - Guia visual passo-a-passo do processo
 - Parceria com mortgage brokers brasileiros
@@ -134,7 +134,7 @@ cliente: debora-segnini
 
 ---
 
-### ❌ Objeção 2: "Não sei se é um bom investimento"
+### Objeção 2: "Não sei se é um bom investimento"
 **Estratégia de Contorno:**
 - Relatórios mensais de valorização por região
 - Calculadora de ROI com rental income
@@ -145,7 +145,7 @@ cliente: debora-segnini
 
 ---
 
-### ❌ Objeção 3: "Não conheço nada de Orlando"
+### Objeção 3: "Não conheço nada de Orlando"
 **Estratégia de Contorno:**
 - Guias de bairros com perfil de cada região
 - Tours virtuais temáticos
@@ -230,10 +230,3 @@ Mostrar que Débora não trata todos igual:
 - ✅ Nada "AI-generated" — conversas reais
 
 ---
-
-## PRÓXIMOS PASSOS
-
-- [ ] Validar personas com Débora (confirmar se faltam ou sobram)
-- [ ] Definir call-to-action por persona
-- [ ] Montar calendário de conteúdo com temas específicos
-- [ ] Criar templates de Reels/Stories/Carrosséis
