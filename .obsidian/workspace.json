@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "47f302c4a8a60808",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a506cea7b18a0e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cfc935c6b62dc70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Clientes/sam-fernandes/briefing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "briefing"
+            }
+          },
+          {
+            "id": "923c9218175e79ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sem título.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sem título"
+            }
+          },
+          {
+            "id": "8bc0cc8df636d7da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Clientes/debora-segnini/Estratégia/voz.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "voz"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0852fe5307e2cbdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "53d476fa238df519",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aeb460bd4227bd65",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "164f4f355cd21a23",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "fafc6cd7db23fc01",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "228d49ac51d7ffe2",
+    "type": "split",
+    "children": [
+      {
+        "id": "de99963631e95cfa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c0db3fbd3026976",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 - Clientes/isabela-castro/ICP.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para ICP"
+            }
+          },
+          {
+            "id": "cff099c0f79f6055",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 - Clientes/isabela-castro/ICP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para ICP"
+            }
+          },
+          {
+            "id": "fe299ebd3cfa45b9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "e3a45b7c817eff68",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "da60f52a1693fc61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 - Clientes/isabela-castro/ICP.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de ICP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "aeb460bd4227bd65",
+  "lastOpenFiles": [
+    "02 - Prompts e Skills/prompt-paleta.md",
+    "02 - Prompts e Skills/prompt-analise-semanal.md",
+    "02 - Prompts e Skills/prompt-posts-semanais.md",
+    "02 - Prompts e Skills/prompt-calendario.md",
+    "02 - Prompts e Skills/prompt-icp.md",
+    "01 - Clientes/debora-segnini/Briefing/briefing.md",
+    "01 - Clientes/cantarelli/Feedback.md",
+    "01 - Clientes/debora-segnini/Estratégia/voz.md",
+    "01 - Clientes/victor-hugo-ferro/Estratégia/voz.md",
+    "01 - Clientes/tiago-zamboni/Estratégia/voz.md",
+    "01 - Clientes/sam-fernandes/Estratégia/voz.md",
+    "01 - Clientes/lais-daltrozo/Estratégia/voz.md",
+    "01 - Clientes/isabela-castro/Estratégia/voz.md",
+    "01 - Clientes/cantarelli/Cantarelli.md",
+    "02 - Prompts e Skills/skills-de-copy.md",
+    "01 - Clientes/bela-castro/Bela Castro.md",
+    "01 - Clientes/isabela-castro/notas-gerais.md",
+    "Sem título.md",
+    "02 - Prompts e Skills/fluxos-automatizados.md",
+    "02 - Prompts e Skills",
+    "01 - Clientes/sam-fernandes/notas-gerais.md",
+    "01 - Clientes/debora-segnini/Reuniões",
+    "01 - Clientes/debora-segnini/Análises",
+    "01 - Clientes/debora-segnini/Calendários/2026-07.md",
+    "01 - Clientes/debora-segnini/Calendários",
+    "01 - Clientes/debora-segnini/Branding/analise-perfis.md",
+    "01 - Clientes/debora-segnini/Branding/paleta.md",
+    "01 - Clientes/debora-segnini/Branding",
+    "01 - Clientes/debora-segnini/Estratégia/ICP.md",
+    "01 - Clientes/debora-segnini/Estratégia",
+    "01 - Clientes/debora-segnini/Briefing",
+    "01 - Clientes/victor-hugo-ferro/Reuniões",
+    "01 - Clientes/victor-hugo-ferro/Análises",
+    "01 - Clientes/victor-hugo-ferro/Calendários/2026-06.md",
+    "01 - Clientes/victor-hugo-ferro/Calendários",
+    "01 - Clientes/victor-hugo-ferro/Branding/paleta.md"
+  ]
+}
