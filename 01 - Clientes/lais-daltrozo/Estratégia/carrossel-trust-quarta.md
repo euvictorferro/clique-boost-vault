@@ -33,7 +33,7 @@ Capa limpa e direta — não explicar tudo aqui, apenas despertar curiosidade.
 ### Body
 Trust é um contrato que protege seu patrimônio. Você coloca bens nele, designa alguém de confiança para gerenciar, e quando falece, tudo vai para seus filhos sem tribunal, sem demoras, sem governo interferindo.
 
-Você manda na lei.
+Você faz a lei sobre o que vai acontecer com o seu patrimônio.
 
 ### Visual
 Ícone de escudo ou caixa protegendo moedas/casa. Cores: Charcoal texto, Cognac acento, fundo Ivory Mist.
