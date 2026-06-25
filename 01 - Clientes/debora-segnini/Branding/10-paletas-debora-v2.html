@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletas de Cores — Débora Segnini | Florida Connexion Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1A3A66;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 0.95em;
+            color: #999;
+            font-style: italic;
+        }
+
+        .palettes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .palette-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .palette-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .palette-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #1A3A66 0%, #2D5491 100%);
+            color: white;
+        }
+
+        .palette-header.marrom {
+            background: linear-gradient(135deg, #6B4423 0%, #8B5A3C 100%);
+        }
+
+        .palette-header.bordeaux {
+            background: linear-gradient(135deg, #2D5A4A 0%, #3A7A5E 100%);
+        }
+
+        .palette-header.minimal {
+            background: linear-gradient(135deg, #2D2D2D 0%, #404040 100%);
+        }
+
+        .palette-name {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .palette-usage {
+            font-size: 0.9em;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .color-strip {
+            display: flex;
+            height: 60px;
+        }
+
+        .color-item {
+            flex: 1;
+            position: relative;
+            cursor: pointer;
+            transition: flex 0.3s ease;
+        }
+
+        .color-item:hover {
+            flex: 1.5;
+        }
+
+        .color-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.75em;
+            font-weight: 700;
+            color: #333;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .color-item:hover .color-label {
+            opacity: 1;
+        }
+
+        .palette-colors {
+            padding: 20px;
+        }
+
+        .color-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        .color-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .color-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            margin-right: 15px;
+            border: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        .color-info {
+            flex: 1;
+        }
+
+        .color-name {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .color-hex {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.85em;
+            color: #D4AF37;
+            font-weight: 600;
+        }
+
+        .badge-recomendada {
+            display: inline-block;
+            background: #10B981;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        .matrix-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        .matrix-section h2 {
+            color: #1A3A66;
+            font-size: 2em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #D4AF37;
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .matrix-table th,
+        .matrix-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .matrix-table th {
+            background: #f5f5f5;
+            font-weight: 700;
+            color: #1A3A66;
+        }
+
+        .matrix-table tr:hover {
+            background: #fafafa;
+        }
+
+        .paleta-badge {
+            display: inline-block;
+            background: #E6F3FF;
+            color: #1A3A66;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            border-left: 3px solid #1A3A66;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .palettes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .matrix-section {
+                padding: 20px;
+            }
+
+            .matrix-table th,
+            .matrix-table td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
+
+        .nota-importante {
+            background: #FFF3CD;
+            border-left: 4px solid #D4AF37;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+        }
+
+        .nota-importante h3 {
+            color: #1A3A66;
+            margin-bottom: 10px;
+        }
+
+        .nota-importante p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🎨 Paletas de Cores</h1>
+            <p>Débora Godoy Segnini — Florida Connexion Properties</p>
+            <p class="subtitle">10 Paletas Profissionais para Imóveis Premium em Orlando</p>
+        </div>
+
+        <!-- NOTA IMPORTANTE -->
+        <div class="nota-importante">
+            <h3>💡 Como Usar Esta Guia</h3>
+            <p><strong>Passe o mouse</strong> sobre cada cor para ver o código HEX. As 3 primeiras paletas são as mantidas (Blue Navy). As demais exploram marrom, verde bordeaux e minimalismo com cinza/preto/dourado.</p>
+        </div>
+
+        <!-- PALETAS -->
+        <div class="palettes-grid">
+            <!-- PALETA 1 — MANTIDA -->
+            <div class="palette-card">
+                <div class="palette-header">
+                    <div class="palette-name">
+                        Luxo Clássico
+                        <span class="badge-recomendada">✓ Base</span>
+                    </div>
+                    <div class="palette-usage">Posts institucionais, marca, premium</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #1A3A66;"><span class="color-label">#1A3A66</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #0F2441;"><span class="color-label">#0F2441</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1A3A66;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Azul Marinho</div>
+                            <div class="color-hex">#1A3A66</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Premium</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Pérola</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #0F2441;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Azul Escuro</div>
+                            <div class="color-hex">#0F2441</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Carvão</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 2 — MANTIDA -->
+            <div class="palette-card">
+                <div class="palette-header">
+                    <div class="palette-name">Modern Blue & Gold</div>
+                    <div class="palette-usage">Posts de mercado, gráficos</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #1F3A70;"><span class="color-label">#1F3A70</span></div>
+                    <div class="color-item" style="background: #E6C563;"><span class="color-label">#E6C563</span></div>
+                    <div class="color-item" style="background: #F5F5F5;"><span class="color-label">#F5F5F5</span></div>
+                    <div class="color-item" style="background: #2D5491;"><span class="color-label">#2D5491</span></div>
+                    <div class="color-item" style="background: #6B7280;"><span class="color-label">#6B7280</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F3A70;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Azul Profundo</div>
+                            <div class="color-hex">#1F3A70</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E6C563;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Claro</div>
+                            <div class="color-hex">#E6C563</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #F5F5F5; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Off</div>
+                            <div class="color-hex">#F5F5F5</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2D5491;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Azul Médio</div>
+                            <div class="color-hex">#2D5491</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #6B7280;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Executivo</div>
+                            <div class="color-hex">#6B7280</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 3 — MANTIDA -->
+            <div class="palette-card">
+                <div class="palette-header">
+                    <div class="palette-name">Modern Minimal</div>
+                    <div class="palette-usage">Carrosséis informativos, infográficos</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #1A3A66;"><span class="color-label">#1A3A66</span></div>
+                    <div class="color-item" style="background: #E6C563;"><span class="color-label">#E6C563</span></div>
+                    <div class="color-item" style="background: #FFFFFF;"><span class="color-label">#FFFFFF</span></div>
+                    <div class="color-item" style="background: #9CA3AF;"><span class="color-label">#9CA3AF</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1A3A66;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Azul Marinho</div>
+                            <div class="color-hex">#1A3A66</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E6C563;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Claro</div>
+                            <div class="color-hex">#E6C563</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFFFFF; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Puro</div>
+                            <div class="color-hex">#FFFFFF</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #9CA3AF;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Suave</div>
+                            <div class="color-hex">#9CA3AF</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Carvão</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 4 — MARROM -->
+            <div class="palette-card">
+                <div class="palette-header marrom">
+                    <div class="palette-name">Marrom Premium</div>
+                    <div class="palette-usage">Elegância, terra, luxury imobiliário</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #6B4423;"><span class="color-label">#6B4423</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #8B5A3C;"><span class="color-label">#8B5A3C</span></div>
+                    <div class="color-item" style="background: #3E2723;"><span class="color-label">#3E2723</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #6B4423;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Marrom Profundo</div>
+                            <div class="color-hex">#6B4423</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Premium</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Pérola</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #8B5A3C;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Marrom Médio</div>
+                            <div class="color-hex">#8B5A3C</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #3E2723;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Marrom Escuro</div>
+                            <div class="color-hex">#3E2723</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 5 — MARROM -->
+            <div class="palette-card">
+                <div class="palette-header marrom">
+                    <div class="palette-name">Warm Earth</div>
+                    <div class="palette-usage">Acolhimento, lifestyle warm, natural</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #8B6F47;"><span class="color-label">#8B6F47</span></div>
+                    <div class="color-item" style="background: #D2B48C;"><span class="color-label">#D2B48C</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #5D4037;"><span class="color-label">#5D4037</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #8B6F47;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Marrom Quente</div>
+                            <div class="color-hex">#8B6F47</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D2B48C;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Bege Arenoso</div>
+                            <div class="color-hex">#D2B48C</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #5D4037;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Marrom Escuro</div>
+                            <div class="color-hex">#5D4037</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 6 — BORDEAUX -->
+            <div class="palette-card">
+                <div class="palette-header bordeaux">
+                    <div class="palette-name">Bordeaux Elegance</div>
+                    <div class="palette-usage">Sofisticação, luxury, verde chique</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #2D5A4A;"><span class="color-label">#2D5A4A</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                    <div class="color-item" style="background: #3A7A5E;"><span class="color-label">#3A7A5E</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2D5A4A;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Verde Bordeaux</div>
+                            <div class="color-hex">#2D5A4A</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Premium</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Pérola</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Carvão</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #3A7A5E;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Verde Médio</div>
+                            <div class="color-hex">#3A7A5E</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 7 — BORDEAUX -->
+            <div class="palette-card">
+                <div class="palette-header bordeaux">
+                    <div class="palette-name">Jewel Tone</div>
+                    <div class="palette-usage">Preciosidade, luxury, sofisticação</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #1B4D3E;"><span class="color-label">#1B4D3E</span></div>
+                    <div class="color-item" style="background: #B8941F;"><span class="color-label">#B8941F</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #2D5A4A;"><span class="color-label">#2D5A4A</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1B4D3E;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Verde Escuro Chique</div>
+                            <div class="color-hex">#1B4D3E</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #B8941F;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Escuro</div>
+                            <div class="color-hex">#B8941F</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Carvão</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Pérola</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2D5A4A;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Verde Bordeaux</div>
+                            <div class="color-hex">#2D5A4A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 8 — MINIMAL -->
+            <div class="palette-card">
+                <div class="palette-header minimal">
+                    <div class="palette-name">Black & Gold</div>
+                    <div class="palette-usage">Poder, minimalismo, autoridade</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #000000;"><span class="color-label">#000000</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #6B7280;"><span class="color-label">#6B7280</span></div>
+                    <div class="color-item" style="background: #FAFAFA;"><span class="color-label">#FAFAFA</span></div>
+                    <div class="color-item" style="background: #2D2D2D;"><span class="color-label">#2D2D2D</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #000000;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Preto Puro</div>
+                            <div class="color-hex">#000000</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado Premium</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #6B7280;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Executivo</div>
+                            <div class="color-hex">#6B7280</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FAFAFA; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Pérola</div>
+                            <div class="color-hex">#FAFAFA</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #2D2D2D;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Escuro</div>
+                            <div class="color-hex">#2D2D2D</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 9 — MINIMAL -->
+            <div class="palette-card">
+                <div class="palette-header minimal">
+                    <div class="palette-name">Neutral Sophistication</div>
+                    <div class="palette-usage">Clean, minimalista, corporativo</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #4B5563;"><span class="color-label">#4B5563</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #D1D5DB;"><span class="color-label">#D1D5DB</span></div>
+                    <div class="color-item" style="background: #FFFFFF;"><span class="color-label">#FFFFFF</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #4B5563;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Profundo</div>
+                            <div class="color-hex">#4B5563</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D1D5DB; border: 1px solid #ccc;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Claro</div>
+                            <div class="color-hex">#D1D5DB</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFFFFF; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Puro</div>
+                            <div class="color-hex">#FFFFFF</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Carvão</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PALETA 10 — MINIMAL -->
+            <div class="palette-card">
+                <div class="palette-header minimal">
+                    <div class="palette-name">Minimalist Luxury</div>
+                    <div class="palette-usage">Elegância discreta, ultra clean</div>
+                </div>
+                <div class="color-strip">
+                    <div class="color-item" style="background: #E5E7EB;"><span class="color-label">#E5E7EB</span></div>
+                    <div class="color-item" style="background: #1F2937;"><span class="color-label">#1F2937</span></div>
+                    <div class="color-item" style="background: #D4AF37;"><span class="color-label">#D4AF37</span></div>
+                    <div class="color-item" style="background: #FFFFFF;"><span class="color-label">#FFFFFF</span></div>
+                    <div class="color-item" style="background: #9CA3AF;"><span class="color-label">#9CA3AF</span></div>
+                </div>
+                <div class="palette-colors">
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #E5E7EB; border: 1px solid #ccc;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Muito Claro</div>
+                            <div class="color-hex">#E5E7EB</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #1F2937;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Preto Suave</div>
+                            <div class="color-hex">#1F2937</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #D4AF37;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Dourado</div>
+                            <div class="color-hex">#D4AF37</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #FFFFFF; border: 2px solid #ddd;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Branco Puro</div>
+                            <div class="color-hex">#FFFFFF</div>
+                        </div>
+                    </div>
+                    <div class="color-row">
+                        <div class="color-swatch" style="background: #9CA3AF;"></div>
+                        <div class="color-info">
+                            <div class="color-name">Cinza Médio</div>
+                            <div class="color-hex">#9CA3AF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><strong>Florida Connexion Properties</strong> — Guia de Cores Oficial 2026</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Desenvolvido para Débora Godoy Segnini | Imóveis Premium em Orlando</p>
+        </div>
+    </div>
+</body>
+</html>
