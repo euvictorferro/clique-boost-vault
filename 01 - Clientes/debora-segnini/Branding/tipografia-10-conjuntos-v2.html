@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia — Débora Segnini | Florida Connexion Properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;500;700&family=Montserrat:wght@700&family=Lato:wght@400;500&family=Cormorant:wght@700&family=Raleway:wght@400;500&family=Poppins:wght@700&family=Inter:wght@400;500;700&family=Sora:wght@700&family=Roboto:wght@400;500&family=Outfit:wght@700&family=Work+Sans:wght@400;500&family=Archivo:wght@700&family=Source+Sans+Pro:wght@400;500&family=Fraunces:wght@700&family=Nunito:wght@400;500&family=Abhaya+Libre:wght@700&family=Quicksand:wght@400;500&family=EB+Garamond:wght@400;700&family=Libre+Franklin:wght@400;500" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1A3A66;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 0.95em;
+            color: #999;
+            font-style: italic;
+        }
+
+        .typography-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .font-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .font-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            padding: 25px;
+            background: linear-gradient(135deg, #1A3A66 0%, #2D5491 100%);
+            color: white;
+        }
+
+        .set-number {
+            font-size: 0.85em;
+            opacity: 0.8;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .headline-font {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .body-font {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .preview-section {
+            margin-bottom: 25px;
+        }
+
+        .preview-label {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            color: #999;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .headline-preview {
+            font-size: 2.2em;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0;
+            color: #1A3A66;
+        }
+
+        .set-1 .headline-preview { font-family: 'Playfair Display', serif; }
+        .set-2 .headline-preview { font-family: 'Montserrat', sans-serif; }
+        .set-3 .headline-preview { font-family: 'Cormorant', serif; }
+        .set-4 .headline-preview { font-family: 'Poppins', sans-serif; }
+        .set-5 .headline-preview { font-family: 'Sora', sans-serif; }
+        .set-6 .headline-preview { font-family: 'Outfit', sans-serif; }
+        .set-7 .headline-preview { font-family: 'Archivo', sans-serif; }
+        .set-8 .headline-preview { font-family: 'Fraunces', serif; }
+        .set-9 .headline-preview { font-family: 'Abhaya Libre', serif; }
+        .set-10 .headline-preview { font-family: 'EB Garamond', serif; }
+
+        .body-preview {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .set-1 .body-preview { font-family: 'Open Sans', sans-serif; }
+        .set-2 .body-preview { font-family: 'Lato', sans-serif; }
+        .set-3 .body-preview { font-family: 'Raleway', sans-serif; }
+        .set-4 .body-preview { font-family: 'Inter', sans-serif; }
+        .set-5 .body-preview { font-family: 'Roboto', sans-serif; }
+        .set-6 .body-preview { font-family: 'Work Sans', sans-serif; }
+        .set-7 .body-preview { font-family: 'Source Sans Pro', sans-serif; }
+        .set-8 .body-preview { font-family: 'Nunito', sans-serif; }
+        .set-9 .body-preview { font-family: 'Quicksand', sans-serif; }
+        .set-10 .body-preview { font-family: 'Libre Franklin', sans-serif; }
+
+        .font-info {
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .font-type {
+            font-size: 0.85em;
+        }
+
+        .font-type-label {
+            color: #999;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .font-type-value {
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .typography-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .headline-preview {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Tipografia</h1>
+            <p>Débora Godoy Segnini — Florida Connexion Properties</p>
+            <p class="subtitle">10 Conjuntos de Fontes Profissionais (Headlines + Body)</p>
+        </div>
+
+        <!-- CONJUNTOS DE FONTES -->
+        <div class="typography-grid">
+            <!-- CONJUNTO 1 -->
+            <div class="font-card set-1">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 1</div>
+                    <div class="headline-font">Playfair Display</div>
+                    <div class="body-font">Open Sans</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Descubra as melhores oportunidades imobiliárias na Flórida com atendimento personalizado em português. Experiência de mais de 15 anos no mercado.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Serif Elegante</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Limpo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 2 -->
+            <div class="font-card set-2">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 2</div>
+                    <div class="headline-font">Montserrat</div>
+                    <div class="body-font">Lato</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Ajudamos brasileiros a realizarem o sonho de investir em imóveis nos EUA. Processo simplificado, financiamento aprovado em 30 dias.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Sans-serif Moderno</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Friendly</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 3 -->
+            <div class="font-card set-3">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 3</div>
+                    <div class="headline-font">Cormorant</div>
+                    <div class="body-font">Raleway</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Selecionamos as melhores oportunidades do mercado imobiliário de Orlando. Cada propriedade é única, cada cliente merece atenção especial.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Serif Sofisticado</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Elegante</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 4 -->
+            <div class="font-card set-4">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 4</div>
+                    <div class="headline-font">Poppins</div>
+                    <div class="body-font">Inter</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Rentabilidade real, segurança jurídica, suporte pós-venda garantido. Você não é apenas um cliente, é um parceiro em um projeto de longo prazo.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Sans-serif Divertido</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Ultra Clean</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 5 -->
+            <div class="font-card set-5">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 5</div>
+                    <div class="headline-font">Sora</div>
+                    <div class="body-font">Roboto</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">De brasileiro para brasileiro. Entendemos suas necessidades, falamos sua língua, conhecemos seu mercado. Sucesso garantido na Flórida.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Sans-serif Futurista</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Confiável</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 6 -->
+            <div class="font-card set-6">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 6</div>
+                    <div class="headline-font">Outfit</div>
+                    <div class="body-font">Work Sans</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Sem surpresas, sem taxas escondidas, sem promessas falsas. Você recebe todas as informações com clareza e honestidade desde o primeiro contato.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Sans-serif Contemporâneo</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Profissional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 7 -->
+            <div class="font-card set-7">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 7</div>
+                    <div class="headline-font">Archivo</div>
+                    <div class="body-font">Source Sans Pro</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Imóveis em Orlando valorizam em média 8% ao ano. Seu investimento não só é seguro, como é lucrativo a longo prazo.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Sans-serif Concreto</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Legível</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 8 -->
+            <div class="font-card set-8">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 8</div>
+                    <div class="headline-font">Fraunces</div>
+                    <div class="body-font">Nunito</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">João comprou seu primeiro imóvel em Orlando e hoje aluga por $2.500/mês. Maria realizou o sonho de dar educação americana aos filhos.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Serif Poético</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Caloroso</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 9 -->
+            <div class="font-card set-9">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 9</div>
+                    <div class="headline-font">Abhaya Libre</div>
+                    <div class="body-font">Quicksand</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Encontre a casa que você sempre sonhou. Estamos aqui pra ajudar em cada passo da jornada: desde a pesquisa até as chaves na mão.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Serif Clássico</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Amigável</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONJUNTO 10 -->
+            <div class="font-card set-10">
+                <div class="card-header">
+                    <div class="set-number">Conjunto 10</div>
+                    <div class="headline-font">EB Garamond</div>
+                    <div class="body-font">Libre Franklin</div>
+                </div>
+                <div class="card-content">
+                    <div class="preview-section">
+                        <div class="preview-label">Headline</div>
+                        <div class="headline-preview">Sua Nova Casa</div>
+                    </div>
+
+                    <div class="preview-section">
+                        <div class="preview-label">Body</div>
+                        <div class="body-preview">Legislação americana protege investidores. Mercado imobiliário com 50 anos de estabilidade. Seu patrimônio está seguro com a gente.</div>
+                    </div>
+
+                    <div class="font-info">
+                        <div class="font-type">
+                            <div class="font-type-label">Headline</div>
+                            <div class="font-type-value">Serif Clássico Premium</div>
+                        </div>
+                        <div class="font-type">
+                            <div class="font-type-label">Body</div>
+                            <div class="font-type-value">Sans-serif Moderno</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>Florida Connexion Properties — Guia de Tipografia Oficial 2026</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Desenvolvido para Débora Godoy Segnini | Imóveis Premium em Orlando</p>
+        </div>
+    </div>
+</body>
+</html>
