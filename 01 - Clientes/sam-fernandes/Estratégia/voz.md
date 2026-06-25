@@ -11,67 +11,57 @@ cliente: sam-fernandes
 
 ## Tom e Personalidade
 
-Sam tem 20 anos de experiência como corretor em Orlando — e isso aparece em tudo que ele fala. O conteúdo dele transmite a segurança de quem já viu de tudo no mercado imobiliário americano. Ele fala com brasileiros que querem comprar imóvel nos EUA — muitas vezes pela primeira vez — então precisa ser o guia confiável, não o vendedor ansioso.
+Sam é solto, brincalhão e fala num ritmo mais lento — mas esse ritmo tem graça. Ele é o tipo de cara que faz você rir no meio de uma explicação sobre financiamento imobiliário. Experiente, sim, mas sem a sisudez de quem se leva a sério demais.
 
-Ele é sério mas não é frio. É formal mas não é distante. Pensa antes de falar, vai direto ao ponto e transmite credibilidade pela experiência, não pelo entusiasmo exagerado.
+Ele tem 20 anos de mercado e carrega isso com leveza — não precisa provar nada. O humor é natural, nunca forçado. Quando ele faz uma piada, vem do jeito de contar, não do conteúdo.
 
-- Energia: experiente, tranquilo, confiável
-- Ritmo: objetivo e direto — conhece o mercado e vai ao ponto
-- Proximidade: fala em português, entende a cabeça do brasileiro
-- Nunca: ansioso para vender, pressão, linguagem de corretor americano genérico
+- Energia: descontraída, experiente, levemente engraçada
+- Ritmo: mais lento, pausado — ele deixa a frase respirar
+- Proximidade: amigável como um velho conhecido, não como um corretor querendo vender
+- Nunca: formal demais, sério o tempo todo, pressão de vendas
 
 ---
 
 ## Frases e expressões que ele usaria
 
-- "20 anos em Orlando me ensinaram que..."
-- "Comprar imóvel nos EUA não precisa ser complicado."
+- "20 anos em Orlando e eu ainda me surpreendo com o que o mercado faz."
+- "Comprar imóvel nos EUA é mais simples do que parece. Deixa eu te mostrar."
 - "Você não precisa entender tudo — é pra isso que eu estou aqui."
-- "O mercado de Orlando continua sendo um dos melhores para investimento."
-- "Com a família Connexion, você não está sozinho nessa compra."
-- "Credibilidade não se fala. Se prova com resultado."
+- "Olha, não vou te enrolar: esse imóvel vale o que tá pedindo."
+- "A Flórida continua sendo a melhor decisão que muita família brasileira tomou."
+- "Já ajudei tanta família a comprar a primeira casa aqui que perdi a conta."
 
 ---
 
 ## Frases que ele NUNCA usaria
 
 - Travessão "—" no meio de frases
-- "Você sabia que..." (abertura genérica)
-- Pressão de vendas: "Última oportunidade", "Não perca essa chance"
-- Linguagem de lançamento imobiliário exagerada estilo Brasil
-- Termos técnicos sem explicar: "cap rate", "escrow", "HOA" sem contexto para o brasileiro
+- "Você sabia que..." (abertura sem graça)
+- Pressão: "Corre que vai acabar", "Última oportunidade"
+- Tom muito formal ou corporativo
+- Termos técnicos sem explicar: "escrow", "HOA", "cap rate" sem contexto
 
 ---
 
 ## Público com quem ele fala
 
-Brasileiros (e alguns americanos) que querem comprar imóvel na Flórida — moradia principal, casa de férias ou investimento. Casas acima de $400K. Classe média-alta. Muitos ainda estão no Brasil planejando a compra, ou recém chegaram nos EUA. Eles precisam de um guia que fale sua língua — no sentido literal e cultural.
+Brasileiros (e alguns americanos) que querem comprar imóvel na Flórida — moradia, casa de férias ou investimento. Casas acima de $400K. Classe média-alta. Muitos ainda estão no Brasil planejando, ou recém chegaram nos EUA. Precisam de alguém que fale sua língua e no jeito que eles entendem.
 
 ---
 
 ## Objetivo principal do conteúdo
 
-Gerar 5 leads qualificados por mês. Chegar a 10K seguidores. Ser referência como corretor de imóveis em Orlando para o público brasileiro.
+Gerar 5 leads qualificados por mês. Chegar a 10K seguidores. Ser a referência de corretor brasileiro em Orlando.
 
 ---
 
 ## Ganchos que funcionam no nicho
 
-- Desmistificar: "Brasileiro pode comprar imóvel nos EUA sem ser cidadão? Sim."
-- Processo: "Como funciona a compra de imóvel em Orlando — do início ao fim"
-- Prova social: cases de clientes brasileiros que compraram com o Sam
-- Oportunidade: dados reais de valorização na Flórida
-- Dia a dia: bastidores de visita a imóveis, lançamentos, negociações
-
----
-
-## Tipos de conteúdo que funcionam
-
-- Reels de tour em imóveis (walk-through com narração do Sam)
-- Carrossel "passo a passo para comprar em Orlando"
-- Depoimentos de clientes brasileiros
-- Comparativo: casa de férias vs. investimento
-- Conteúdo sobre vida em Orlando para brasileiros
+- Desmistificar com leveza: "Brasileiro pode comprar imóvel nos EUA sem ser cidadão? Sim. Deixa eu te explicar."
+- Processo descomplicado: "Comprar em Orlando tem 5 passos. Vou te mostrar os 5."
+- Humor sutil: comparações engraçadas entre mercado brasileiro e americano
+- Prova social: "Mais uma família brasileira com as chaves na mão"
+- Tour de imóvel com narração descontraída do Sam
 
 ---
 
@@ -86,9 +76,9 @@ Gerar 5 leads qualificados por mês. Chegar a 10K seguidores. Ser referência co
 
 ## Pilares de conteúdo
 
-1. Educação sobre o mercado imobiliário americano (35%)
-2. Tours e apresentação de imóveis (25%)
-3. Prova social e depoimentos de clientes (20%)
+1. Educação descomplicada sobre o mercado imobiliário americano (35%)
+2. Tours e apresentação de imóveis com narração do Sam (25%)
+3. Prova social e depoimentos de clientes brasileiros (20%)
 4. Vida em Orlando / comunidade brasileira (10%)
 5. Serviços e CTAs diretos (10%)
 
@@ -96,10 +86,10 @@ Gerar 5 leads qualificados por mês. Chegar a 10K seguidores. Ser referência co
 
 ## Observações importantes
 
-- 20 anos de experiência é o principal diferencial — usar sempre
-- Nome da marca Florida Connexion Properties é consolidado em Orlando
-- Foco em imóveis acima de $400K — público com poder aquisitivo real
-- Histórico: Facebook gerou muitos clientes no início — reuniões presenciais no Brasil também convertem bem
+- 20 anos de experiência é o maior diferencial — aparece no jeito que ele fala, não em frases solenes
+- Nome da marca Florida Connexion Properties é consolidado
+- Foco em imóveis acima de $400K
+- Histórico: Facebook gerou muitos clientes no início; reuniões presenciais no Brasil convertem bem
 
 ---
 

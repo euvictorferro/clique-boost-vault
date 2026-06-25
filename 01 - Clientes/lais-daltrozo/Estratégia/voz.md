@@ -11,69 +11,64 @@ cliente: lais-daltrozo
 
 ## Tom e Personalidade
 
-Próxima, humana e acolhedora — como uma amiga que entende de finanças e quer ver sua família bem. Não fala como corretora de seguros, fala como alguém que se importa com o futuro de quem ela atende. Energia calmante, nunca alarmista. Usa o seguro como proteção e oportunidade, nunca como medo.
+Laís é culta, elegante e precisa na fala. Não usa palavras difíceis, mas escolhe cada palavra com cuidado — o tom dela lembra um advogado que sabe explicar um contrato para qualquer pessoa sem usar juridiquês. Direto, claro, seguro. Quando ela fala, você sente que está ouvindo alguém que domina o assunto e respeita sua inteligência.
 
-Bilíngue no coração: mesmo falando português, o contexto é sempre americano — vida nos EUA, sonho imigrante, família que construiu algo do zero e quer proteger.
+Ao mesmo tempo, não é fria. É próxima. A elegância dela não cria distância — ela aproxima, porque transmite confiança.
 
-- Energia: calorosa, confiante, educativa
-- Ritmo: direto mas humano — explica sem enrolar
-- Proximidade: fala como quem entende a realidade do imigrante brasileiro nos EUA
-- Nunca: tom de seguradora fria, linguagem de contrato, pressão de vendas, alarmismo
+- Energia: elegante, confiante, precisa
+- Ritmo: cadenciado, sem pressa — cada frase tem peso
+- Proximidade: culta mas nunca distante, fala com respeito pelo público
+- Nunca: linguagem popular demais, gírias, informalidade excessiva, alarmismo
 
 ---
 
 ## Frases e expressões que ela usaria
 
-- "Você trabalhou muito para chegar aqui. Faz sentido proteger isso."
-- "Proteção de verdade começa antes de precisar."
-- "IUL não é só seguro. É uma estratégia de vida."
-- "Sua família merece segurança, não promessa."
-- "Quanto custa não ter um plano?"
-- "Falar sobre seguro de vida é falar sobre amor."
-- "Eu ajudo famílias brasileiras a proteger o que mais importa."
-- "A maioria descobre que precisava quando já é tarde demais."
+- "Proteção financeira não é luxo. É planejamento."
+- "Sua família construiu algo real aqui. Faz sentido proteger isso com seriedade."
+- "IUL é uma decisão estratégica, não uma despesa."
+- "Quando algo acontece, não é hora de aprender como o seguro funciona."
+- "Quem planeja com antecedência escolhe. Quem não planeja, aceita o que vem."
+- "Atendo famílias brasileiras nos EUA que levam seu futuro a sério."
 
 ---
 
 ## Frases que ela NUNCA usaria
 
-- "Você sabia que..." (abertura genérica e sem impacto)
+- "Você sabia que..." (abertura genérica e sem elegância)
 - Travessão "—" no meio de frases
-- "Invista no seu futuro" (vago, sem emoção)
-- "Seguro de vida é essencial" (óbvio, sem conexão)
-- Tom alarmista: "Se você morrer amanhã sua família vai sofrer"
-- Termos técnicos sem tradução humana: "benefício acelerado", "prêmio mensal", "valor de resgate"
+- Gírias ou linguagem muito coloquial
+- Tom alarmista: "Se você morrer amanhã..."
+- Termos técnicos sem contexto: "prêmio mensal", "benefício acelerado"
+- Entusiasmo exagerado ou exclamações em excesso
 
 ---
 
 ## Público com quem ela fala
 
-Famílias brasileiras e latinas nos EUA — imigrantes que construíram uma vida, têm filhos, talvez uma casa, e nunca pararam para pensar no que acontece se algo der errado. A objeção principal é sempre o preço ("é muito caro"), então o conteúdo precisa mostrar valor antes de falar em custo.
-
-Faixa: 28-50 anos, casados, com filhos, trabalhadores. Muitos são autônomos ou pequenos empreendedores em Orlando, FL.
+Famílias brasileiras nos EUA (principalmente Orlando, FL) — imigrantes que construíram patrimônio real e levam o futuro a sério. Classe média-alta. A principal objeção é o custo ("é caro"), mas o conteúdo a rebate mostrando o custo de não ter proteção.
 
 ---
 
 ## Objetivo principal do conteúdo
 
-Gerar leads qualificados no Instagram e TikTok — pessoas que chegam no DM ou WhatsApp já entendendo o que é IUL e querendo saber mais. O conteúdo educa antes de vender.
+Gerar leads qualificados no Instagram e TikTok — pessoas que chegam já entendendo o produto e querendo conversar.
 
 ---
 
 ## Ganchos que funcionam no nicho
 
-- Comparação simples: "Term Life vs IUL — qual é melhor pra sua família?"
-- Desmistificar: "IUL não é aquele seguro complicado que você acha"
-- Realidade do imigrante: "Você tem casa aqui, filho aqui — e um plano se algo acontecer?"
-- Objeção virada: "Quanto custa não ter seguro de vida vs quanto custa ter"
-- CTA de engajamento: "Comenta PROTEÇÃO que eu te explico sem compromisso"
+- Custo real da falta de planejamento: "O que acontece com seu patrimônio aqui nos EUA se algo acontecer com você?"
+- Desmistificar IUL com elegância: "IUL não é seguro complicado. É estratégia de vida."
+- Comparativo preciso: "Term Life protege. IUL protege e cresce."
+- CTA discreto: "Me chama no DM se quiser entender o que faz sentido para a sua família."
 
 ---
 
 ## Serviços (para o sistema saber o que promover)
 
 - IUL (Indexed Universal Life) — seguro + componente de investimento
-- Term Life — seguro por prazo determinado, mais acessível
+- Term Life — seguro por prazo determinado
 - Final Expense — cobertura de despesas funerárias
 - Atendimento bilíngue (português/inglês)
 
@@ -82,7 +77,7 @@ Gerar leads qualificados no Instagram e TikTok — pessoas que chegam no DM ou W
 ## Identidade visual
 
 - Rosa (#E91E8C), Branco, Dourado
-- Paleta feminina, clean, profissional
+- Paleta feminina, elegante, profissional
 
 ---
 
