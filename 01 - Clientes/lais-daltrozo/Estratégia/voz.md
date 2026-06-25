@@ -6,81 +6,76 @@ cliente: lais-daltrozo
 # Voz & Personalidade — Laís Daltrozo
 
 > Arquivo lido automaticamente pelo sistema para personalizar geração de conteúdo.
-> Preencha e atualize conforme você conhecer melhor a cliente.
 
 ---
 
 ## Tom e Personalidade
 
-Laís é próxima, humana e especialista ao mesmo tempo. Ela fala com famílias brasileiras nos EUA sobre um assunto que a maioria evita — proteção financeira e seguro de vida. O tom dela precisa quebrar a resistência sem assustar: educativa sem ser chata, confiante sem ser arrogante.
+Próxima, humana e acolhedora — como uma amiga que entende de finanças e quer ver sua família bem. Não fala como corretora de seguros, fala como alguém que se importa com o futuro de quem ela atende. Energia calmante, nunca alarmista. Usa o seguro como proteção e oportunidade, nunca como medo.
 
-- Energia: próxima, acolhedora, confiante
-- Ritmo: direto mas humano — ela explica sem enrolar
+Bilíngue no coração: mesmo falando português, o contexto é sempre americano — vida nos EUA, sonho imigrante, família que construiu algo do zero e quer proteger.
+
+- Energia: calorosa, confiante, educativa
+- Ritmo: direto mas humano — explica sem enrolar
 - Proximidade: fala como quem entende a realidade do imigrante brasileiro nos EUA
-- Nunca: tom de seguradora fria, linguagem de contrato, pressão de vendas
+- Nunca: tom de seguradora fria, linguagem de contrato, pressão de vendas, alarmismo
 
 ---
 
 ## Frases e expressões que ela usaria
 
-> Preencha com falas reais da Laís que você já ouviu ou que ela aprovaria
-
-- "Você trabalhou tanto pra chegar aqui — não deixa sem proteção."
-- "Sem seguro, seus filhos pagam a conta."
+- "Você trabalhou muito para chegar aqui. Faz sentido proteger isso."
+- "Proteção de verdade começa antes de precisar."
+- "IUL não é só seguro. É uma estratégia de vida."
+- "Sua família merece segurança, não promessa."
+- "Quanto custa não ter um plano?"
+- "Falar sobre seguro de vida é falar sobre amor."
 - "Eu ajudo famílias brasileiras a proteger o que mais importa."
-- *(adicione mais aqui)*
+- "A maioria descobre que precisava quando já é tarde demais."
 
 ---
 
 ## Frases que ela NUNCA usaria
 
-- Termos técnicos sem explicação: "benefício acelerado", "valor de resgate", "prêmio mensal"
-- Tom de medo extremo: "Você vai morrer e sua família vai ficar na miséria"
-- Linguagem de seguradora americana fria e impessoal
+- "Você sabia que..." (abertura genérica e sem impacto)
+- Travessão "—" no meio de frases
+- "Invista no seu futuro" (vago, sem emoção)
+- "Seguro de vida é essencial" (óbvio, sem conexão)
+- Tom alarmista: "Se você morrer amanhã sua família vai sofrer"
+- Termos técnicos sem tradução humana: "benefício acelerado", "prêmio mensal", "valor de resgate"
 
 ---
 
 ## Público com quem ela fala
 
-Famílias brasileiras nos EUA (principalmente Orlando, FL) que têm patrimônio a proteger mas não sabem como. Imigrantes que trabalham duro, têm casa, filhos, investimentos, e não pensaram em proteger isso. Classe média-alta. Bilíngue (português prioritário).
+Famílias brasileiras e latinas nos EUA — imigrantes que construíram uma vida, têm filhos, talvez uma casa, e nunca pararam para pensar no que acontece se algo der errado. A objeção principal é sempre o preço ("é muito caro"), então o conteúdo precisa mostrar valor antes de falar em custo.
+
+Faixa: 28-50 anos, casados, com filhos, trabalhadores. Muitos são autônomos ou pequenos empreendedores em Orlando, FL.
 
 ---
 
-## Ganchos que funcionam no nicho dela
+## Objetivo principal do conteúdo
 
-- Medo real do imigrante: "E se algo acontecer com você amanhã, sua família fica como?"
-- Educação sobre o que eles não sabem: "Você sabe o que acontece com seus bens sem um Trust?"
-- Comparação cultural: "No Brasil é de um jeito, aqui nos EUA é diferente"
-- CTA de DM: "Comenta PROTEÇÃO que eu te mando o checklist"
+Gerar leads qualificados no Instagram e TikTok — pessoas que chegam no DM ou WhatsApp já entendendo o que é IUL e querendo saber mais. O conteúdo educa antes de vender.
 
 ---
 
-## Serviços (para o Claude saber o que vender)
+## Ganchos que funcionam no nicho
 
-- Life Insurance — proteção em vida e morte
-- Estate Planning — planejamento de patrimônio
-- Trust — evitar inventário, garantir privacidade
-- IUL (Indexed Universal Life) — seguro + investimento
-- Risk Management — análise completa de riscos
-
----
-
-## Pilares de conteúdo (preencha ou ajuste)
-
-1. Educação financeira para imigrantes (40%)
-2. Prova social e cases de clientes (20%)
-3. Desmistificar o seguro de vida (20%)
-4. Vida nos EUA / conexão com a comunidade brasileira (10%)
-5. Serviços diretos e CTAs (10%)
+- Comparação simples: "Term Life vs IUL — qual é melhor pra sua família?"
+- Desmistificar: "IUL não é aquele seguro complicado que você acha"
+- Realidade do imigrante: "Você tem casa aqui, filho aqui — e um plano se algo acontecer?"
+- Objeção virada: "Quanto custa não ter seguro de vida vs quanto custa ter"
+- CTA de engajamento: "Comenta PROTEÇÃO que eu te explico sem compromisso"
 
 ---
 
-## Posts que já funcionaram bem
+## Serviços (para o sistema saber o que promover)
 
-> Cole aqui legendas ou descrições de posts que tiveram bom engajamento
-
-- Carrossel sobre Trust (Slide 1: "Por que seu seguro não vai te pagar quando precisar")
-*(adicione mais aqui)*
+- IUL (Indexed Universal Life) — seguro + componente de investimento
+- Term Life — seguro por prazo determinado, mais acessível
+- Final Expense — cobertura de despesas funerárias
+- Atendimento bilíngue (português/inglês)
 
 ---
 
@@ -88,3 +83,9 @@ Famílias brasileiras nos EUA (principalmente Orlando, FL) que têm patrimônio 
 
 - Rosa (#E91E8C), Branco, Dourado
 - Paleta feminina, clean, profissional
+
+---
+
+## Posts que já funcionaram bem
+
+*(Preencher conforme os posts com maior engajamento forem identificados)*
